@@ -1,0 +1,13 @@
+#Decorator with function arg
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        print(f"function name: {func.__name__}")
+        print(f"argument: {args}")
+        return func(*args, **kwargs)
+    return wrapper
+
+@my_decorator
+def add(a, b):
+    return a + b
+
+print (add(3, 4))

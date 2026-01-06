@@ -1,0 +1,4 @@
+n = lambda x: "+ive" if x > 0 else "-ive" if x < 0 else "Zero"
+print(n(5))
+print(n(-2))
+print(n(0))

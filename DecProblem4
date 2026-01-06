@@ -1,0 +1,15 @@
+#check user login
+def login_required(func):
+    def wrapper(is_logged_in):
+        if is_logged_in:
+            func(is_logged_in)
+        else:
+            print("Login required")
+    return wrapper
+
+@login_required
+def dashboard(is_logged_in):
+    print("Welcome to dashboard")
+
+dashboard(True)
+dashboard(False)

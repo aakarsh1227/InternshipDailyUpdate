@@ -1,0 +1,6 @@
+try:
+    x = int(23 )
+except ValueError:
+    print("Error")
+else:
+    print("No error, x =", x)
