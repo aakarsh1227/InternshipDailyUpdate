@@ -1,0 +1,13 @@
+class firstn:
+    
+    def __init__(self , n , o):
+      print("hello")
+      self.name = n
+      self.number = o
+
+    def info(self):
+      print( f'{self.name} no is {self.number}')
+
+
+a = firstn("sachin" , 10)
+a.info()

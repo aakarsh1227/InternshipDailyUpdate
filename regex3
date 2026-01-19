@@ -1,0 +1,7 @@
+import re
+
+txt = "javk3a"
+if re.search("^[A-Za-z]+$", txt):
+    print(" All are alp")
+else:
+    print("digit is present")

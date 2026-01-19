@@ -1,0 +1,10 @@
+#if string ends with a number
+
+
+
+import re
+txt = "room 5"
+if re.search("/d$" , txt):
+    print("end here")
+else:
+    print("not here")

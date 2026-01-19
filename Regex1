@@ -1,0 +1,7 @@
+import re
+
+txt = "hey"
+if re.match("^he" , txt):
+    print("correct")
+else :
+    print("no")

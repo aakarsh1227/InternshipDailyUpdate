@@ -1,0 +1,8 @@
+def count(n): #generator
+    count = 1
+    while count <= n: #loop
+        yield count #keyword of generator to return value
+        count = count + 1
+
+for num in count(8):
+    print(num)
