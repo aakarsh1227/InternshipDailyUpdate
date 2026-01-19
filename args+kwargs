@@ -1,0 +1,5 @@
+def info(*args, **kwargs):
+    print("Args:", args)
+    print("Kwargs:", kwargs)
+
+info(1, 2, 3, name="John", role="Developer")
